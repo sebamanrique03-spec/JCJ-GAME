@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Papea a Fabri200o</title>
+    <style>
+        body {
+            background-color: #1b1b1b;
+            color: white;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        h1 {
+            margin-bottom: 30px;
+            font-size: 2em;
+            text-align: center;
+        }
+
+        #contador {
+            margin: 20px 0;
+            font-size: 1.5em;
+        }
+
+        button {
+            padding: 15px 30px;
+            font-size: 1.2em;
+            background-color: #ff4d4d;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            color: white;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #ff1a1a;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Papea a Fabri200o</h1>
+    <div id="contador">Papeaste a fabri 0 Veces!</div>
+    <button id="noobBtn">Noob200o</button>
+
+    <script>
+        let contador = 0;
+
+        const boton = document.getElementById("noobBtn");
+        const textoContador = document.getElementById("contador");
+
+        boton.addEventListener("click", () => {
+            contador++;
+            textoContador.textContent = `Papeaste a fabri ${contador} Veces!`;
+        });
+    </script>
+    
+</body>
+</html>
